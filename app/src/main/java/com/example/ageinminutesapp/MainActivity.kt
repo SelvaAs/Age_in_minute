@@ -8,7 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import java.text.SimpleDateFormat
 import java.util.*
-
 class MainActivity : AppCompatActivity() {
 
     private var tvSelectedDate: TextView? = null
@@ -25,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         btnDatePicker.setOnClickListener {
             clickDatePicker()
         }
-
     }
 
    private fun clickDatePicker() {
@@ -48,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
                 val theDate = sdf.parse(selectedDate)
 
-                theDate?.let {   //  bos olmadiginda calismasi icin,boylece kodumuzun cokmediginden emin oluruz..
+                theDate?.let {   // bos olmadiginda calismasi icin,boylece kodumuzun cokmediginden emin oluruz..
                     val selectedDateInMinutes = theDate.time / 60000
 
                     val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
