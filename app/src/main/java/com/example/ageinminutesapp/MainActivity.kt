@@ -58,10 +58,8 @@ class MainActivity : AppCompatActivity() {
 
                     tvAgeInMinutes?.text = differentInMinutes.toString()
                 }
-
                 }
-
-            },
+  },
 
             year,
             month,
